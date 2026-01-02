@@ -12,6 +12,8 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+        if event.type == pygame.FULLSCREEN:
+            pygame.display.toggle_fullscreen()
 
     screen.fill(("darkblue"))
 
